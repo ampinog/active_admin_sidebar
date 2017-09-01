@@ -11,7 +11,7 @@ module ActiveAdminSidebar
       end
     end
 
-    def right_sidebar!
+    def right_sidebar!(options = {})
       @sidebar_options = { position: :right }
       if options.fetch(:collapsed, false)
         collapsed_sidebar
