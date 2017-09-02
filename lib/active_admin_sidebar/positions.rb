@@ -5,7 +5,7 @@ module ActiveAdminSidebar
        @sidebar_options = { position: :left }
     end
     
-    def left_sidebar_collapse!
+    def left_sidebar_collapsed!
       @sidebar_options = { position: :left }
       collapsed_sidebar
       @sidebar_options.merge!(
